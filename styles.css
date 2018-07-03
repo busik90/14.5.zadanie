@@ -6,6 +6,12 @@ html {
   box-sizing: border-box;
 }
 
+:root {
+  --border-color: #999;
+  --text-color: #ddd;
+  --blue: #104C96;
+}
+
 body {
   width: 100vw;
   height: 100vh;
@@ -13,7 +19,7 @@ body {
   margin: 0;
 
   font-family: sans-serif;
-  color: white;
+  color: var(--text-color);
   background: url('./images/backgrounds/ep_naturalblack.png');
 
   display: flex;
@@ -27,9 +33,9 @@ body {
   padding: 20px;
   overflow-y: auto;
   background-color: #222;
-  border: 1px solid white;
+  border: 1px solid var(--border-color);
   border-radius: 15px;
-  box-shadow: 0px 0px 40px 0px rgb(16, 76, 150);
+  box-shadow: 0px 0px 40px 0px var(--blue);
 }
 
 .contactForm {
@@ -39,7 +45,7 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-flow: row wrap;
-  border-bottom: 2px dashed white;
+  border-bottom: 2px dashed var(--border-color);
 }
 
 .contactForm input,
@@ -47,8 +53,8 @@ body {
   width: 40%;
   margin: 10px;
   padding: 7px 15px;
-  color: white;
-  border: 1px solid white;
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
   border-radius: 5px;
   background-color: transparent;
 }
@@ -58,7 +64,7 @@ body {
 }
 
 .contactForm button:hover {
-  box-shadow: 0px 0px 20px 5px rgb(16, 76, 150);
+  box-shadow: 0px 0px 20px 5px var(--blue);
 }
 
 .contactsList {
@@ -69,7 +75,7 @@ body {
   margin: 15px;
   padding: 10px;
   display: flex;
-  border-bottom: 2px dotted white;
+  border-bottom: 2px dotted var(--border-color);
 }
 
 .contactItem img {
@@ -77,6 +83,10 @@ body {
   margin-right: 15px;
 }
 
+.textBox p span {
+  color: var(--blue);
+}
+
 .contactEmail a {
-  color: white;
+  color: var(--text-color);
 }
