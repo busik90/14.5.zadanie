@@ -1,0 +1,82 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #222;
+  margin: 0;
+
+  font-family: sans-serif;
+  color: white;
+  background: url('./images/backgrounds/ep_naturalblack.png');
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
+.app {
+  max-height: 90vh;  
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #222;
+  border: 1px solid white;
+  border-radius: 15px;
+  box-shadow: 0px 0px 40px 0px rgb(16, 76, 150);
+}
+
+.contactForm {
+  width: 500px;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+  border-bottom: 2px dashed white;
+}
+
+.contactForm input,
+.contactForm button {
+  width: 40%;
+  margin: 10px;
+  padding: 7px 15px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.contactForm button {
+  cursor: pointer;
+}
+
+.contactForm button:hover {
+  box-shadow: 0px 0px 20px 5px rgb(16, 76, 150);
+}
+
+.contactsList {
+  padding: 0;
+}
+
+.contactItem {
+  margin: 15px;
+  padding: 10px;
+  display: flex;
+  border-bottom: 2px dotted white;
+}
+
+.contactItem img {
+  width: 120px;
+  margin-right: 15px;
+}
+
+.contactEmail a {
+  color: white;
+}
